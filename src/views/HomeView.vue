@@ -298,7 +298,19 @@ button.success {
 }
 </style> -->
 <style>
-#components-layout-demo-custom-trigger .trigger {
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+[data-theme="dark"] .site-layout .site-layout-background {
+  background: #141414;
+}
+/* #components-layout-demo-custom-trigger .trigger {
   font-size: 18px;
   line-height: 64px;
   padding: 0 24px;
@@ -318,5 +330,5 @@ button.success {
 
 .site-layout .site-layout-background {
   background: #fff;
-}
+} */
 </style>
