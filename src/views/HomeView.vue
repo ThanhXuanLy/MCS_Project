@@ -1,11 +1,7 @@
 <template>
   <main>
-    <a-page-header
-      style="border: 1px solid rgb(235, 237, 240); background: #dcebc8"
-      title="MCS"
-      sub-title=""
-    />
-    <div class="action-refresh">
+    <div style="font-size: 40px; margin-bottom: 20px">MSC</div>
+    <div class="action-refresh" style="margin-bottom: 10px">
       <a-button type="primary" :loading="iconLoading" @click="scanBtnHandler">
         <template #icon> <RedoOutlined /></template>
         Scan
@@ -17,7 +13,7 @@
         +
       </a-button>
     </div>
-    <a-table :dataSource="dataSource" :columns="columns" :loading="isLoading">
+    <a-table :dataSource="dataSource" :columns="columns" :loading="isLoading" class="boxshadow">
       <template #bodyCell="{ column, record }">
         <template v-if="column.key === 'pairingInstruction'">
           <a-button
@@ -129,8 +125,8 @@ const isLoading = ref(true);
 
 const booleanValue = ref("Pairing");
 
-// const socketConnect = new WebSocket("ws://10.10.14.81:5580/ws");
-const socketConnect = new WebSocket("ws://172.16.10.232:5580/ws");
+ const socketConnect = new WebSocket("ws://10.10.14.84:5580/ws");
+//const socketConnect = new WebSocket("ws://172.16.10.232:5580/ws");
 
 socketConnect.onopen = (event) => {
   getNodes();

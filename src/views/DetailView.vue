@@ -47,8 +47,8 @@ const displayItem = ref("fan"); // fan | lightbulb
 const route = useRoute();
 const fanStatus = ref(false);
 
-// const socketConnect = new WebSocket("ws://10.10.14.81:5580/ws");
-const socketConnect = new WebSocket("ws://172.16.10.232:5580/ws");
+const socketConnect = new WebSocket("ws://10.10.14.84:5580/ws");
+//const socketConnect = new WebSocket("ws://172.16.10.232:5580/ws");
 
 socketConnect.onopen = (event) => {
   console.log("Connected from detail");
