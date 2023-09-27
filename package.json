@@ -1,0 +1,26 @@
+{
+  "name": "wirelessspeaker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "^4.0.3",
+    "bootstrap-vue": "^2.23.1",
+    "or": "^0.2.0",
+    "pinia": "^2.1.6",
+    "qrcode.vue": "^3.4.1",
+    "socket.io-client": "^4.7.2",
+    "vue": "^3.3.4",
+    "vue-axios": "^3.5.2",
+    "vue-qrcode-reader": "^5.3.5",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
